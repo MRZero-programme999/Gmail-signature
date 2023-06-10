@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>gmail card</title>
+  <!--font-awesome cdn-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="Container">
+    <div class="card">
+      <div class="profile-pic">
+        <img src="gg.png">
+      </div>
+      <div class="line"></div>
+      <div class="basic-info">
+        <div class="mood">
+          <p>
+            <i class="fas fa-moon icon" id="changeMode"></i>
+          </p>
+        </div>
+        <div class="profile-info">
+          <p class="name"><spam class="label">MD ABU BOKOR SIDDIK</spam></p>
+          <p class="designation"><spam class="label">Web-Developer</spam></p>
+        </div>
+        <div class="contact-info">
+          <div class="row">
+            <p class="mobile">
+              <i class="fa fa-phone icon"></i>
+              <spam class="label">013-23-16-63</spam>
+            </p>
+            <p class="email">
+              <i class="fa fa-envelope icon"></i>
+              <spam class="label">programing@gmail.com</spam>
+            </p>
+          </div>
+          <div class="row">
+            <p class="address">
+              <i class="fa fa-map-marker icon"></i>
+              <spam class="label">Address:1234</spam>
+            </p>
+            <p class="web">
+              <i class="fa fa-globe icon"></i>
+              <spam class="label">ProgrammingStory.com</spam>
+            </p>
+          </div>
+        </div>
+        <div class="socail-icons">
+          <i class="fab fa-facebook-f icon"></i>
+          <i class="fab fa-instagram icon"></i>
+          <i class="fab fa-twitter icon"></i>
+          <i class="fab fa-telegram icon"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var globalProp = document.documentElement.style;
+    var lightMd = true;
+
+    $("#changeMode").click(function() {
+      if (lightMd) {
+        darkMode();
+      } else {
+        lightMode();
+      }
+      lightMd = !lightMd;
+    });
+
+    function lightMode() {
+      globalProp.setProperty('--backgroundcolor', '#dddddd');
+      globalProp.setProperty('--boxsadw1', 'rgba(119, 119, 119, 0.5)');
+      globalProp.setProperty('--boxsadw2', 'rgba(255, 255, 255, 0.85)');
+      globalProp.setProperty('--labelcoler1', '#011a1a');
+      globalProp.setProperty('--labelcoler2', 'black');
+    }
+
+    function darkMode() {
+      globalProp.setProperty('--backgroundcolor', 'rgb(9, 25, 33)');
+      globalProp.setProperty('--boxsadw1', 'rgb(0, 0, 0, 45%)');
+      globalProp.setProperty('--boxsadw2', 'rgb(255, 255, 255, 15%)');
+      globalProp.setProperty('--labelcoler1', 'white');
+      globalProp.setProperty('--labelcoler2', 'white');
+    }
+  </script>
+</body>
+</html>

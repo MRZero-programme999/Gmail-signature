@@ -1,0 +1,143 @@
+  :root{
+      --backgroundcolor: #dddddd;
+      --boxsadw1: rgba( 119,119,119,0.5);
+      --boxsadw2: rgba(255,255,255,0.85);
+      --labelcoler1: #011a1a;
+      --labelcoler2: black;
+    }
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--backgroundcolor);
+    }
+
+    .card{
+      width: 830px;
+      min-height: 400px;
+      padding:20px;
+      position: relative;
+      border: 2px solid var(--backgroundcolor);
+      box-shadow: 8px 8px 5px 4px var(--boxsadw1),
+      -8px -8px 5px 4px var(--boxsadw2),
+      inset 5px 5px 5px 5px var(--boxsadw1),
+      inset -5px -5px 5px 5px var(--boxsadw2);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .profile-pic{
+      position: relative;
+      width: 210px;
+      height:200px;
+      border: 1px solid var(--backgroundcolor);
+      box-shadow: 5px 5px 5px 4px var(--boxsadw1),
+      -5px -5px 5px 4px var(--boxsadw2),
+      inset 5px 5px 5px 4px var(--boxsadw1),
+      inset -5px -5px 5px 4px var(--boxsadw2);
+      border-radius: 0px 50px;
+      margin-left: 20px;
+    }
+
+    .profile-pic img{
+      position: absolute;
+      height: 190px;
+      width: 190px;
+      top: 5px;
+      right: 5px;
+      border-radius: 0px 50px;
+    }
+
+    .line{
+      width: 6px;
+      height: 210px;
+      border: 1px solid var(--backgroundcolor);
+      box-shadow: 5px 5px 5px 0px var(--boxsadw1),
+      -5px -2px 5px 0px var(--boxsadw2),
+      inset 5px 5px 5px 0px var(--boxsadw1),
+      inset -5px -5px 5px 0px var(--boxsadw2);
+    }
+
+    .basic-info{
+      max-width: 470px;
+      height: 250px;
+      margin-top: 10px;
+      width: 100%;
+    }
+
+    .name{
+      font-weight: bold;
+      font-size: 40px;
+      text-shadow: 2px 2px 2px grey;
+      color: var(--labelcoler1);
+    }
+
+    .designation{
+      font-weight: bold;
+      font-size: 30px;
+    }
+
+    .contact-info{
+      position: relative;
+      margin-top: 30px;
+    }
+
+    .contact-info .row{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 25px;
+      padding-right: 5px;
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    .contact-info .row p{
+      width: calc(100%/2 -10px);
+    }
+
+    .icon{
+      width: 30px;
+      height: 30px;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 5.5px;
+      cursor: pointer;
+      outline: none;
+      border: 1px solid var(--backgroundcolor);
+      box-shadow: 2px 2px 3px 2px var(--boxsadw1),
+      -2px -2px 3px 2px var(--boxsadw2),
+      inset 2px 2px 3px 2px var(--boxsadw1),
+      inset -2px -2px 3px 2px var(--boxsadw2);
+      border-radius: 50%;
+      text-align: center;
+      margin-right:5px;
+      color: var(--labelcoler2);
+    }
+
+    .socail-icons{
+      position: absolute;
+      margin: auto;
+      
+    }
+
+    .mood{
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      cursor: pointer;
+    }
+
+    .label{
+      color: var(--labelcoler2);
+    }
+ 
